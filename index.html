@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#d8f3e6">
+  <meta name="description" content="PQ+ optimise votre expérience sanitaire numérique avec un papier toilette dématérialisé, responsable et mesurable.">
+  <title>PQ+ — Hygiène durable numérique</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <nav class="topbar" aria-label="Navigation principale">
+        <a class="brand" href="#top" aria-label="PQ+ accueil">
+          <span class="brand-mark" aria-hidden="true">PQ</span>
+          <span>PQ+</span>
+        </a>
+        <label class="theme-toggle" for="themeSwitch">
+          <span>Mode sombre</span>
+          <input id="themeSwitch" type="checkbox" aria-label="Activer le thème sombre">
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+      </nav>
+
+      <section id="top" class="hero-card card">
+        <p class="eyebrow">CleanTech sanitaire · protocole zéro fibre</p>
+        <h1>PQ+</h1>
+        <p class="tagline">L’hygiène durable entre dans l’ère numérique.</p>
+        <p class="intro">Optimisez votre confort personnel grâce à une expérience de papier toilette dématérialisée, responsable et mesurable.</p>
+      </section>
+    </header>
+
+    <main>
+      <section id="onboarding" class="onboarding card" hidden aria-live="polite">
+        <div>
+          <p class="eyebrow">Initialisation du protocole</p>
+          <h2>Bienvenue dans l’hygiène dématérialisée.</h2>
+          <p>PQ+ transforme chaque geste en indicateur responsable. Swipez le rouleau pour commencer votre transition sanitaire numérique.</p>
+        </div>
+        <button id="startOnboarding" class="primary-btn" type="button">Commencer l’optimisation</button>
+      </section>
+
+      <section class="roll-card card" aria-labelledby="rollTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Module de déroulement</p>
+            <h2 id="rollTitle">Rouleau numérique certifié</h2>
+          </div>
+          <span id="modePill" class="mode-pill">Classique</span>
+        </div>
+
+        <div id="swipeZone" class="swipe-zone" role="button" tabindex="0" aria-label="Swiper vers le bas ou vers la droite pour dérouler le papier toilette numérique">
+          <svg id="paperSvg" class="paper-svg" viewBox="0 0 320 360" role="img" aria-labelledby="svgTitle svgDesc">
+            <title id="svgTitle">Rouleau de papier toilette numérique PQ+</title>
+            <desc id="svgDesc">Un rouleau blanc élégant avec tube central, feuille déroulante et lignes de prédécoupe animées.</desc>
+            <defs>
+              <linearGradient id="rollGradient" x1="0" x2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset="0.55" stop-color="#f4f8f5"/>
+                <stop offset="1" stop-color="#dde8e3"/>
+              </linearGradient>
+              <linearGradient id="paperGradient" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset="1" stop-color="#eef6f2"/>
+              </linearGradient>
+              <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+                <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#20342c" flood-opacity="0.16"/>
+              </filter>
+            </defs>
+            <ellipse id="roll-shadow" class="roll-shadow" cx="160" cy="306" rx="94" ry="18"/>
+            <g id="paperGroup" class="paper-group">
+              <rect id="paper-sheet" class="paper-sheet" x="126" y="145" width="88" height="138" rx="15"/>
+              <g id="perforation-lines" class="perforation-lines">
+                <line x1="134" y1="184" x2="206" y2="184"/>
+                <line x1="134" y1="224" x2="206" y2="224"/>
+                <line x1="134" y1="264" x2="206" y2="264"/>
+              </g>
+              <path class="paper-shine" d="M142 154 C156 174 154 226 144 275"/>
+            </g>
+            <g id="rollGroup" class="roll-group" transform-origin="160 116">
+              <circle id="roll-body" class="roll-body" cx="160" cy="116" r="83" filter="url(#softShadow)"/>
+              <circle class="roll-inner" cx="160" cy="116" r="42"/>
+              <circle id="roll-core" class="roll-core" cx="160" cy="116" r="24"/>
+              <path class="roll-depth" d="M104 55 C130 34 185 30 216 55"/>
+              <path class="roll-ridge" d="M93 116 C105 75 126 52 160 44"/>
+              <path class="roll-ridge subtle" d="M228 116 C216 159 194 181 160 188"/>
+            </g>
+          </svg>
+          <div class="swipe-copy">
+            <strong>Swiper pour dérouler</strong>
+            <span>Geste vertical ou horizontal · seuil intelligent 50 px</span>
+          </div>
+        </div>
+
+        <button id="assistButton" class="secondary-btn" type="button" aria-label="Déclencher un déroulement assisté">Déroulement assisté</button>
+        <p class="disclaimer">PQ+ ne remplace pas une solution analogique certifiée.</p>
+      </section>
+
+      <section class="card modes-card" aria-labelledby="modeTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Modes d’utilisation</p>
+            <h2 id="modeTitle">Choisissez votre protocole</h2>
+          </div>
+        </div>
+        <div class="segmented" role="tablist" aria-label="Modes PQ+">
+          <button class="mode-button" type="button" data-mode="classic" role="tab">Classique</button>
+          <button class="mode-button" type="button" data-mode="eco" role="tab">Éco</button>
+          <button class="mode-button" type="button" data-mode="premium" role="tab">Premium</button>
+        </div>
+        <p id="modeDescription" class="mode-description"></p>
+      </section>
+
+      <section class="card stats-card" aria-labelledby="statsTitle">
+        <p class="eyebrow">Mesure d’impact</p>
+        <h2 id="statsTitle">Tableau de bord d’impact</h2>
+        <div class="stats-grid">
+          <article><span>Feuilles virtuelles utilisées</span><strong id="statSheets">0</strong></article>
+          <article><span>Sessions de déroulement</span><strong id="statSessions">0</strong></article>
+          <article><span>Indice de propreté estimée</span><strong id="statCleanliness">0%</strong></article>
+          <article><span>Confort numérique</span><strong id="statComfort">0</strong></article>
+          <article><span>Arbres symboliquement préservés</span><strong id="statTrees">0.000000</strong></article>
+          <article><span>CO₂ narratif évité</span><strong id="statCo2">0.00 g</strong></article>
+          <article><span>Taux de dématérialisation sanitaire</span><strong id="statDemat">0%</strong></article>
+        </div>
+      </section>
+
+      <section class="card badges-card" aria-labelledby="badgesTitle">
+        <p class="eyebrow">Preuves de conformité</p>
+        <h2 id="badgesTitle">Certifications obtenues</h2>
+        <div id="badgesList" class="badges-list"></div>
+      </section>
+
+      <section class="card settings-card" aria-labelledby="settingsTitle">
+        <p class="eyebrow">Réglages</p>
+        <h2 id="settingsTitle">Gouvernance du protocole</h2>
+        <button id="resetButton" class="danger-btn" type="button">Réinitialiser mon protocole sanitaire numérique</button>
+      </section>
+    </main>
+  </div>
+
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
