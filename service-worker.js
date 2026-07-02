@@ -1,10 +1,13 @@
-const CACHE_NAME = 'pq-plus-cache-v1';
+const CACHE_NAME = 'pq-plus-cache-v2';
 const APP_SHELL = [
   './',
   './index.html',
   './style.css',
   './app.js',
-  './manifest.webmanifest'
+  './manifest.webmanifest',
+  './icons/icon-192.jpg',
+  './icons/icon-512.jpg',
+  './icons/apple-touch-icon.png'
 ];
 
 self.addEventListener('install', event => {

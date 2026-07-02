@@ -10,15 +10,15 @@
   "description": "PQ+ optimise l'expérience sanitaire numérique grâce à un papier toilette dématérialisé, responsable, mesurable et symboliquement durable.",
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='42' fill='%23d8f3e6'/%3E%3Ccircle cx='96' cy='82' r='54' fill='white' stroke='%2326a878' stroke-width='8'/%3E%3Ccircle cx='96' cy='82' r='19' fill='%23d6c3a2'/%3E%3Cpath d='M86 125h52v42H86z' fill='white' stroke='%2326a878' stroke-width='6'/%3E%3Ctext x='96' y='57' font-family='Arial,sans-serif' font-size='22' font-weight='700' text-anchor='middle' fill='%2317211d'%3EPQ+%3C/text%3E%3C/svg%3E",
+      "src": "icons/icon-192.jpg",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%23d8f3e6'/%3E%3Ccircle cx='256' cy='214' r='146' fill='white' stroke='%2326a878' stroke-width='22'/%3E%3Ccircle cx='256' cy='214' r='52' fill='%23d6c3a2'/%3E%3Cpath d='M230 332h136v112H230z' fill='white' stroke='%2326a878' stroke-width='16'/%3E%3Ctext x='256' y='152' font-family='Arial,sans-serif' font-size='64' font-weight='800' text-anchor='middle' fill='%2317211d'%3EPQ+%3C/text%3E%3C/svg%3E",
+      "src": "icons/icon-512.jpg",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     }
   ]
