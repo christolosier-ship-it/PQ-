@@ -11,6 +11,10 @@ PQ+ est une mini PWA mobile-first de papier toilette numérique écologique. Ell
 ├── app.js
 ├── manifest.webmanifest
 ├── service-worker.js
+├── icons/
+│   ├── icon-192.jpg
+│   ├── icon-512.jpg
+│   └── apple-touch-icon.png
 └── README.md
 ```
 
@@ -25,7 +29,7 @@ PQ+ est une mini PWA mobile-first de papier toilette numérique écologique. Ell
 - Onboarding léger affiché uniquement au premier lancement.
 - Thème clair / sombre sauvegardé en `localStorage`.
 - Service worker cache-first pour un fonctionnement offline après première visite.
-- Manifest PWA avec icônes SVG en data URI, sans fichier externe.
+- Manifest PWA avec icônes applicatives dédiées, plus icône iPhone `apple-touch-icon.png`.
 
 ## Lancer localement
 
