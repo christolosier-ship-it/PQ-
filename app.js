@@ -523,6 +523,10 @@ function initSwipe() {
   dom.assistButton.addEventListener('click', () => commitSwipe(150, 0.52));
 }
 
+function initSettings() {
+  dom.resetButton.addEventListener('click', resetData);
+}
+
 function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js').catch(() => {}));
@@ -533,6 +537,7 @@ initTheme();
 initOnboarding();
 initModes();
 initSwipe();
+initSettings();
 updateStats();
 renderBadges();
 checkBadges();
